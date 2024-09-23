@@ -5,8 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Dashboard</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/d2f89adc8d.js" crossorigin="anonymous" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <div class="logo"><img src="./assets/logo.png" alt="logo"></div>
+            <div class="profile-section">
+                <h1>Welcome Back, Ash</h1>
+                <div>
+                    <div class="profile-pic">
+                        <img src="./assets/profile-pic.jpg" alt="profile picture">
+                    </div>
+                    <div class="explore-tab">
+                        <div class="explore-links">
+                            <span><i class="fa-solid fa-house"></i><a href="#">Home</a></span>
+                            <span><i class="fa-solid fa-gear"></i><a href="#">Settings</a></span>
+                        </div>
+                        <div class="search-tab">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" id="search" placeholder="Search">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="nav-type">
+                <h3>Listen</h3>
+                <ul>
+                    <li><a>Playlists</a></li>
+                    <li><a>Podcasts and Shows</a></li>
+                    <li><a>Audiobooks</a></li>
+                </ul>
+            </div>
+            <div class="nav-type">
+                <h3>Watch</h3>
+                <ul>
+                    <li><a>Music Videos</a></li>
+                    <li><a>Live Performance</a></li>
+                    <li><a>Reels and Shorts</a></li>
+                </ul>
+            </div>
+            <div class="nav-type">
+                <h3>Experience</h3>
+                <ul>
+                    <li><a>Events</a></li>
+                    <li><a>Festivals</a></li>
+                    <li><a>Tours</a></li>
+                </ul>
+            </div>
+            <div class="nav-type">
+                <h3>Discover</h3>
+                <ul>
+                    <li><a>Artists</a></li>
+                    <li><a>Songs</a></li>
+                    <li><a>Albums</a></li>
+                </ul>
+            </div>
+        </nav>
+        <aside>
+            <div class="gray-box">
+                <h3>Queue</h3>
+                <ul>
+                    <li>
+                        <img src="" alt="" class="track-img">
+                        <div class="track-details"></div>
+                    </li>
+                    <li>
+                        <img src="" alt="" class="track-img">
+                        <div class="track-details"></div>
+                    </li>
+                    <li>
+                        <img src="" alt="" class="track-img">
+                        <div class="track-details"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="gray-box">
+                <h3>My Other Works</h3>
+                <ul>
+                    <li>
+                        <img src="" alt="">
+                        <div class="proj-details"><a href="" target="_blank">Calculator</a><a href=""><i class="fa-brands fa-github"></i></a></div>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <div class="proj-details"><a href="" target="_blank">Etch-a-Sketch</a><a href=""><i class="fa-brands fa-github"></i></a></div>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <div class="proj-details"><a href="" target="_blank">Sign-up Form</a><a href=""><i class="fa-brands fa-github"></i></a></div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <div class="gray-box">
+                <div><h2>Top Artists</h2><a>Show All</a></div>
+                <div class="artist-box">
+                    <div class="artist-card">
+                        <div class="artist-poster">
+                            <img src="./assets/artist-1.png" alt="daft punk">
+                            <a>Daft Punk</a>
+                        </div>
+                        <div>
+                            <a><i class="fa-solid fa-headphones fa-xs"></i></a>
+                            <a><i class="fa-solid fa-bag-shopping fa-xs"></i></a>
+                            <a><i class="fa-regular fa-calendar fa-xs"></i></a>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-poster">
+                            <img src="assets/artist-2.png" alt="lana del ray">
+                            <a>Lana Del Rey</a>
+                        </div>
+                        <div>
+                            <a><i class="fa-solid fa-headphones fa-xs"></i></a>
+                            <a><i class="fa-solid fa-bag-shopping fa-xs"></i></a>
+                            <a><i class="fa-regular fa-calendar fa-xs"></i></a>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-poster">
+                            <img src="./assets/artist-3.jpg" alt="nf">
+                            <a>NF</a>
+                        </div>
+                        <div>
+                            <a><i class="fa-solid fa-headphones fa-xs"></i></a>
+                            <a><i class="fa-solid fa-bag-shopping fa-xs"></i></a>
+                            <a><i class="fa-regular fa-calendar fa-xs"></i></a>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-poster">
+                            <img src="./assets/artist-4.png" alt="Beyoncé">
+                            <a href="">Beyoncé</a>
+                        </div>
+                        <div>
+                            <a><i class="fa-solid fa-headphones fa-xs"></i></a>
+                            <a><i class="fa-solid fa-bag-shopping fa-xs"></i></a>
+                            <a><i class="fa-regular fa-calendar fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gray-box">
+                <div><h2>Live Experiences</h2><a>Show All</a></div>
+                <div class="exp-box">
+                    <div class="exp-card">
+                        <img src="./assets/show-1.png" alt="coachella snapshot">
+                        <h3>Coachella</h3>
+                        <p>Experience the ultimate fusion of music, art, and culture at Coachella, the iconic music and arts festival set against the breathtaking backdrop of the California desert.</p>
+                        <a class="check-date">
+                            <i class="fa-regular fa-calendar"></i> Check Dates
+                        </a>
+
+                    </div>
+                    <div class="exp-card">
+                        <img src="./assets/show-2.png" alt="tour snapshot">
+                        <h3>Upcoming Tours</h3>
+                        <p>Join Coldplay on an extraordinary adventure as they embark on their highly anticipated Music of the Spheres World Tour, captivating audiences across the globe with their electrifying performances.</p>
+                        <a class="check-date">
+                            <i class="fa-regular fa-calendar"></i> Check Dates
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
+
+
 </html>
