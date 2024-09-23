@@ -13,9 +13,12 @@ body {
     height: 100vh;
     color: white;
     font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.5;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Poppins", system-ui;
 }
 
@@ -56,10 +59,16 @@ header {
     gap: 100px;
 }
 
-.logo > img {
+.logo {
+    background-color: white;
     width: 50px;
     height: 50px;
-    margin-left: 1rem;
+    margin-left: 3rem;
+    border-radius: 50%;
+}
+
+.logo > img {
+  width: 100%;
 }
 
 .profile-pic {
@@ -154,6 +163,7 @@ main .gray-box > div:first-of-type {
 .artist-box {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 1rem;
 }
@@ -193,13 +203,24 @@ main .gray-box > div:first-of-type {
 
 .exp-box {
     display: flex;
+    justify-content: space-around   ;
     gap: 10px;
     margin: 1rem 0;
+}
+
+@media screen and (max-width: 800px) {
+    .exp-box {
+        flex-wrap: wrap;
+    }
 }
 
 .exp-card img {
     width: 350px;
     border-radius: 10px;
+}
+
+.exp-card p {
+    max-width: 350px;
 }
 
 .check-date {
@@ -222,6 +243,49 @@ aside {
     margin-right: 0.5rem
 }
 
+aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+aside li {
+    display: flex;
+    gap: 10px;
+}
+
+aside li:hover {
+    color: var(--main-theme);
+}
+
+aside li p,h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+}
+
+aside .gray-box:last-child li {
+    flex-direction: column;
+    gap: 5px;
+    filter: brightness(80%);
+}
+aside .gray-box:last-child li:hover {
+    filter: brightness(90%);
+}
+aside .gray-box:last-child ul img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.proj-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 /* nav styles */
 
 nav {
@@ -241,4 +305,65 @@ nav ul {
 
     margin: 0.25rem 1rem;
     padding: 0.5rem;
+}
+
+/* music player styles */
+
+.music-player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.current-track {
+    display: flex;
+    gap: 10px;
+}
+
+.current-track img {
+    width: 50px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.slider input {
+    width: 300px;
+    -webkit-appearance: none;
+    height: 2px;
+    background: var(--main-theme);
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 3px; /* Thumb width */
+    height: 15px; /* Thumb height */
+    background: whitesmoke; /* Thumb color */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.controls{
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.controls i:hover {
+    color: var(--main-theme);
+    cursor: pointer;
 }
